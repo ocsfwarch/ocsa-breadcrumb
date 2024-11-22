@@ -12,7 +12,7 @@ A lightweight and customizable React component for rendering accessible breadcru
 
 Install the package via npm:
 
-```bash
+```
 npm install ocsa-breadcrumb
 ```
 
@@ -20,20 +20,18 @@ npm install ocsa-breadcrumb
 
 Or with Yarn:
 
-```bash
 yarn add ocsa-breadcrumb
-```
+
+````
 
 ## Usage
 
 ### 1. Import the Component and Styles
 
-Make sure to import both the component and its associated CSS:
 
 ```tsx
 import React from "react";
 import OcsaBreadcrumb from "ocsa-breadcrumb";
-import "ocsa-breadcrumb/dist/style.css";
 ```
 
 ### 2. Provide Breadcrumb Items
@@ -51,7 +49,6 @@ Here’s how you can use the component in your React project:
 ```tsx
 import React from "react";
 import OcsaBreadcrumb from "ocsa-breadcrumb";
-import "ocsa-breadcrumb/dist/style.css";
 
 const App = () => {
   const items = [
@@ -90,13 +87,17 @@ The component renders a breadcrumb navigation like this:
 
 ## Customization
 
-The package uses an external CSS file (`style.css`) for styling. You can override the default styles in your own CSS file if needed.
 
 ### Default Styles
 
 Here’s a summary of the default CSS:
 
 ```css
+:root {
+  --breadcrumb-color: red;
+  --breadcrumb-content: "→";
+}
+
 .breadcrumb {
   padding: 0 0.5rem;
 }
@@ -113,9 +114,10 @@ Here’s a summary of the default CSS:
 .breadcrumb li:not(:last-child)::after {
   display: inline-block;
   margin: 0 0.25rem;
-  content: "→";
-  color: red;
+  content: var(--breadcrumb-content);
+  color: var(--breadcrumb-color);
 }
+
 ```
 
 ### Overriding Styles
