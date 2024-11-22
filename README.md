@@ -144,12 +144,4 @@ Contributions are welcome! If you encounter a bug or have a feature request, ple
 
 This package is licensed under the [MIT License](./LICENSE).
 
----
 
-Happy coding!
-
-```
-
----
-```
-````
