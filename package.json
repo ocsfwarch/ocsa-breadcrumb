@@ -1,0 +1,32 @@
+{
+  "name": "ocsa-breadcrumb",
+  "version": "1.0.7",
+  "description": "A React breadcrumb component with TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^6.0.0",
+    "typescript": "^4.5.0"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "ocsa-lib"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
+  }
+}
