@@ -1,8 +1,3 @@
-Here’s a sample `README.md` file for your **`ocsa-breadcrumb`** package. It is structured to be informative, professional, and easy to use, with clear sections for installation, usage, and examples.
-
----
-
-````markdown
 # OCSA Breadcrumb
 
 A lightweight and customizable React component for rendering accessible breadcrumb navigation in your web applications.
@@ -20,6 +15,7 @@ Install the package via npm:
 ```bash
 npm install ocsa-breadcrumb
 ```
+
 ````
 
 Or with Yarn:
@@ -154,3 +150,4 @@ Happy coding!
 
 ---
 ```
+````
