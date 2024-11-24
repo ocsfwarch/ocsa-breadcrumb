@@ -87,6 +87,38 @@ The component renders a breadcrumb navigation like this:
 
 ## Customization
 
+### Optional onClick Handler
+The component allows for the inclusion of an 'onClick' handler.
+The return value is an item in the items array.
+
+Here’s how you can use the component in your React project:
+
+```tsx
+import React from "react";
+import OcsaBreadcrumb from "ocsa-breadcrumb";
+
+const App = () => {
+  const handleOnClick = (item: BreadcrumbItem) => {
+    console.log(item.label)
+  }
+
+  const items = [
+    { label: "Home", href: "/" },
+    { label: "Library", href: "/library" },
+    { label: "Data", href: "/data" },
+    { label: "Bootstrap", href: "/bootstrap" },
+    { label: "Product", isCurrent: true },
+  ];
+
+  return (
+    <div>
+      <OcsaBreadcrumb items={items}  onClickHandler={onClickHandler} />
+    </div>
+  );
+};
+
+export default App;
+```
 
 ### Default Styles
 
