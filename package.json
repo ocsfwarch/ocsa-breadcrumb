@@ -1,6 +1,6 @@
 {
   "name": "ocsa-breadcrumb",
-  "version": "1.0.8",
+  "version": "1.0.13",
   "description": "A React breadcrumb component with TypeScript",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
