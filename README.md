@@ -119,6 +119,7 @@ const App = () => {
 
 export default App;
 ```
+NOTE: Including the ***onClicker*** handler will render the ***li*** elements with ***span*** elements rather than ***anchor*** elements.
 
 ### Default Styles
 
@@ -132,6 +133,11 @@ Here’s a summary of the default CSS:
 
 .breadcrumb {
   padding: 0 0.5rem;
+}
+
+.breadcrumb a {
+  color: var(--breadcrumb-link-color);
+  text-decoration: none;
 }
 
 .breadcrumb ul {
