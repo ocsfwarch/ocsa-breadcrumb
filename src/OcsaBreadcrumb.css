@@ -8,6 +8,11 @@
   padding: 0 0.5rem;
 }
 
+.breadcrumb a {
+  color: var(--breadcrumb-link-color);
+  text-decoration: none;
+}
+
 .breadcrumb ul {
   display: flex;
   flex-flow: row wrap;
